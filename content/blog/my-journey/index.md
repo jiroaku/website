@@ -1,6 +1,6 @@
 ---
 title: my journey
-date: 2024-12-20
+date: 2025-11-19
 excerpt: how i went from customizing android phones to building backend systems and studying networks.
 tags:
   - personal
