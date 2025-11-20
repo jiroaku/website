@@ -15,10 +15,55 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const siteUrl = "https://jiroaku.dev";
+const siteTitle = "jiroaku — web dev & software engineer, voice actor";
+const siteDescription =
+  "Personal site & blog of Jiroaku: CS / systems engineering student focused on backend automation, Co-founder of Tridnio Studios, founder of EuxoraSoft, sharing projects, blog posts, and voice acting work.";
+
 export const metadata: Metadata = {
-  title: "jiroaku — cs student · web dev · gamer · voice actor",
-  description: "cs student learning backend dev & networking (ccna in progress). web dev, gamer (minecraft • valorant), and voice actor for many minecraft events. cofounder @ Tridnio Studios. founder @ EuxoraSoft.",
-  keywords: ["jiroaku", "web developer", "voice actor", "game developer", "Tridnio Studios", "EuxoraSoft"],
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: siteTitle,
+    template: "%s | jiroaku",
+  },
+  description: siteDescription,
+  keywords: [
+    "jiroaku",
+    "voice actor",
+    "minecraft narration",
+    "web developer",
+    "backend developer",
+    "Tridnio Studios",
+    "EuxoraSoft",
+    "CCNA student",
+  ],
+  openGraph: {
+    title: siteTitle,
+    description: siteDescription,
+    url: siteUrl,
+    siteName: "jiroaku",
+    images: [
+      {
+        url: "/logo.jpg",
+        width: 1024,
+        height: 1024,
+        alt: "jiroaku logo",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@jiroaku",
+    creator: "@jiroaku",
+    title: siteTitle,
+    description: siteDescription,
+    images: ["/logo.jpg"],
+  },
+  alternates: {
+    canonical: siteUrl,
+  },
   icons: {
     icon: "/logo.jpg",
   },
