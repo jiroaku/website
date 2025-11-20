@@ -38,12 +38,33 @@ const navItems = [
   { href: '/', label: 'home' },
   { href: '/about', label: 'about' },
   { href: '/portfolio', label: 'projects' },
+  { href: '/voice', label: 'voice' },
   { href: '/blog', label: 'blog' },
   { href: '/contact', label: 'contact' },
 ];
 
 const posts = getAllPosts().slice(0, 2);
 const featuredProjects = projects.slice(0, 2);
+const voiceHighlights = [
+  {
+    id: 'silver',
+    name: 'SilverGames',
+    role: 'Main voice narrator',
+    logo: '/voice-events/silver-games.png',
+  },
+  {
+    id: 'shadoune',
+    name: 'Shadoune Games',
+    role: 'Narrator & Bomber Guard',
+    logo: '/voice-events/shadoune-games.png',
+  },
+  {
+    id: 'steal',
+    name: 'Steal Games',
+    role: 'Competition introducer',
+    logo: '/voice-events/steal-games.png',
+  },
+];
 
 export default function Home() {
   return (
@@ -69,7 +90,7 @@ export default function Home() {
                   <div className="absolute -inset-1 bg-gradient-to-r from-[var(--accent)] to-[var(--accent-purple)] rounded-2xl opacity-20 group-hover:opacity-30 blur transition-opacity"></div>
                   <div className="relative">
                     <Image
-                      src="/asd.jpg"
+                      src="/logo.jpg"
                       alt="jiroaku"
                       width={240}
                       height={240}
@@ -233,6 +254,45 @@ export default function Home() {
                       {formatDate(post.frontmatter.date)}
                     </p>
                   </Link>
+                ))}
+              </div>
+            </div>
+
+            {/* Voice Highlights */}
+            <div className="border border-[var(--border-color)] p-6">
+              <div className="flex items-center justify-between mb-6">
+                <div>
+                  <h2 className="text-2xl font-semibold text-[var(--text-primary)] font-mono">
+                    ./voice
+                  </h2>
+                  <p className="text-sm text-[var(--text-secondary)]">
+                    minecraft event narration & character work
+                  </p>
+                </div>
+                <Link href="/voice" className="text-sm text-[var(--accent)] hover:underline font-mono">
+                  see all →
+                </Link>
+              </div>
+              <div className="space-y-4">
+                {voiceHighlights.map((event) => (
+                  <div
+                    key={event.id}
+                    className="flex items-center gap-4 border-l-2 border-[var(--border-color)] pl-5 py-3"
+                  >
+                    <div className="relative h-14 w-20 overflow-hidden rounded-lg border border-[var(--border-color)] bg-[var(--bg-secondary)]">
+                      <Image
+                        src={event.logo}
+                        alt={`${event.name} logo`}
+                        fill
+                        sizes="90px"
+                        className="object-contain p-2"
+                      />
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="font-semibold text-lg text-[var(--text-primary)]">{event.name}</h3>
+                      <p className="font-mono text-xs text-[var(--text-muted)]">{event.role}</p>
+                    </div>
+                  </div>
                 ))}
               </div>
             </div>
