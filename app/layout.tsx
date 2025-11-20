@@ -44,10 +44,10 @@ export const metadata: Metadata = {
     siteName: "jiroaku",
     images: [
       {
-        url: "/logo.jpg",
-        width: 1024,
-        height: 1024,
-        alt: "jiroaku logo",
+        url: "/@banner.jpg",
+        width: 1200,
+        height: 630,
+        alt: "jiroaku banner",
       },
     ],
     locale: "en_US",
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     creator: "@jiroaku",
     title: siteTitle,
     description: siteDescription,
-    images: ["/logo.jpg"],
+    images: ["/@banner.jpg"],
   },
   alternates: {
     canonical: siteUrl,
