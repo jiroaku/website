@@ -120,7 +120,7 @@ export function getAllPosts(): BlogPost[] {
 
       const stats = readingTime(content);
       const imageMtime = frontmatter.featureImage
-        ? getImageMtime(slug, frontmatter.featureImage)
+        ? getImageMtime(slug, frontmatter.featureImage) ?? undefined
         : undefined;
 
       allPostsData.push({
@@ -174,7 +174,7 @@ export function getPostBySlug(slug: string): BlogPost | null {
 
         const stats = readingTime(content);
         const imageMtime = frontmatter.featureImage
-          ? getImageMtime(slug, frontmatter.featureImage)
+          ? getImageMtime(slug, frontmatter.featureImage) ?? undefined
           : undefined;
 
         return {
