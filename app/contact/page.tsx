@@ -124,6 +124,39 @@ export default function Contact() {
                 </Link>
               </div>
             </div>
+
+            {/* Discord */}
+            <div className="border border-[var(--border-color)] p-8 hover:border-[var(--accent)] transition-all group">
+              <div className="space-y-6">
+                <div className="flex items-center gap-4">
+                  <div className="w-14 h-14 border border-[var(--border-color)] flex items-center justify-center group-hover:border-[var(--accent)] transition-colors">
+                    <svg
+                      width="28"
+                      height="28"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="text-[var(--text-secondary)] group-hover:text-[var(--accent)] transition-colors"
+                    >
+                      <path d="M21 16a1 1 0 0 0 1-1.18l-1.2-6A2 2 0 0 0 18.85 7c-1.37-.63-3.3-1-6.85-1s-5.48.37-6.85 1a2 2 0 0 0-1.94 1.82l-1.2 6A1 1 0 0 0 3 16h2.35l.3 1.2A2 2 0 0 0 7.57 18h8.86a2 2 0 0 0 1.92-1.8L18.65 16z" />
+                      <path d="M7 8s1.5 2 5 2 5-2 5-2" />
+                      <path d="M8 12h.01" />
+                      <path d="M16 12h.01" />
+                    </svg>
+                  </div>
+                  <h3 className="text-xl font-semibold text-[var(--text-primary)] font-mono">discord</h3>
+                </div>
+                <p className="text-base text-[var(--text-secondary)]">
+                  voice or text chats, fast collaboration, and community events
+                </p>
+                <div className="inline-flex items-center gap-2 text-[var(--accent)] font-mono text-base">
+                  <span>jiroaku</span>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Additional Info */}
