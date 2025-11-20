@@ -4,14 +4,7 @@ import { getAllPosts } from '@/lib/blog';
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://jiroaku.dev';
 
-  const routes = [
-    '',
-    '/about',
-    '/portfolio',
-    '/blog',
-    '/voice-demos',
-    '/contact',
-  ];
+  const routes = ['', '/about', '/portfolio', '/voice', '/blog', '/contact'];
 
   const posts = getAllPosts();
 
