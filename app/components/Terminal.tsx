@@ -58,6 +58,7 @@ export function Terminal() {
         return () => clearTimeout(timer);
       } else {
         // Move to next message
+        // eslint-disable-next-line react-hooks/set-state-in-effect
         setMessageIndex((prev) => (prev + 1) % messages.length);
         setIsTyping(true);
       }

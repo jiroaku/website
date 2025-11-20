@@ -6,7 +6,7 @@ import readingTime from 'reading-time';
 const postsDirectory = path.join(process.cwd(), 'content', 'blog');
 
 // Helper function to ensure date is always a string in YYYY-MM-DD format
-function normalizeDate(date: any): string {
+function normalizeDate(date: unknown): string {
   if (!date) {
     return new Date().toISOString().split('T')[0];
   }

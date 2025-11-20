@@ -84,7 +84,7 @@ export default function Home() {
                     </h1>
                     <div className="space-y-4 text-[var(--text-secondary)]">
                       <p className="text-lg leading-relaxed">
-                        i'm <span className="text-[var(--accent)] font-semibold">jiro</span>, a 21-year-old computer science student. started with web development, now transitioning to backend and automation.
+                        i&apos;m <span className="text-[var(--accent)] font-semibold">jiro</span>, a 21-year-old computer science student. started with web development, now transitioning to backend and automation.
                       </p>
                       <p className="text-base leading-relaxed">
                         cofounder @{' '}

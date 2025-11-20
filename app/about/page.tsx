@@ -39,7 +39,7 @@ export default function About() {
             </h1>
             <div className="space-y-6 text-lg leading-relaxed text-[var(--text-secondary)] max-w-4xl">
               <p>
-                i'm <span className="text-[var(--accent)] font-semibold">jiro</span> (jiroaku), a 21-year-old computer science student (systems engineering). started with web development, now transitioning to backend and automation. cofounder @{' '}
+                i&apos;m <span className="text-[var(--accent)] font-semibold">jiro</span> (jiroaku), a 21-year-old computer science student (systems engineering). started with web development, now transitioning to backend and automation. cofounder @{' '}
                 <a
                   href="https://tridniostudios.com"
                   target="_blank"
@@ -60,7 +60,7 @@ export default function About() {
                 .
               </p>
               <p>
-                voice actor, gamer, and developer. fan of anime, music, kdramas, and videogames. interested in cybersecurity, math, and music. i love singing. btw, i'm a son of god.
+                voice actor, gamer, and developer. fan of anime, music, kdramas, and videogames. interested in cybersecurity, math, and music. i love singing. btw, i&apos;m a son of god.
               </p>
             </div>
           </div>
@@ -83,7 +83,7 @@ export default function About() {
             <h2 className="text-3xl font-semibold text-[var(--text-primary)] font-mono">./journey</h2>
             <div className="space-y-4 text-lg text-[var(--text-secondary)] max-w-4xl">
               <p>
-                started programming at 16 when i went to a vocational highschool to study software development. we started with <span className="text-[var(--accent)]">c++</span> in the first year, then <span className="text-[var(--accent)]">c# mvc .net</span> in the second year, and web dev (<span className="text-[var(--accent)]">js + php</span>) in the final year. that's when i decided to become a web dev.
+                started programming at 16 when i went to a vocational highschool to study software development. we started with <span className="text-[var(--accent)]">c++</span> in the first year, then <span className="text-[var(--accent)]">c# mvc .net</span> in the second year, and web dev (<span className="text-[var(--accent)]">js + php</span>) in the final year. that&apos;s when i decided to become a web dev.
               </p>
               <p>
                 currently doing <span className="text-[var(--accent)]">ccna</span> to learn about networks. i primarily use <span className="text-[var(--accent)]">windows</span> on my desktop (college programs and gaming), but i do use <span className="text-[var(--accent)]">linux</span> on 2 laptops — currently trying <span className="text-[var(--accent)]">arch</span> (omarchy) and <span className="text-[var(--accent)]">ubuntu</span> with omakube.
