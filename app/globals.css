@@ -409,3 +409,8 @@ a:hover {
   background: var(--bg-secondary);
   padding: 1em;
 }
+
+/* Text Scramble Effect - Scrambled characters */
+.dud {
+  color: var(--text-muted);
+}
