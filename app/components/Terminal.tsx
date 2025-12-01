@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState, startTransition } from 'react';
 
 class TextScrambleEffect {
   el: HTMLElement;
@@ -45,7 +45,8 @@ class TextScrambleEffect {
     let output = '';
     let complete = 0;
     for (let i = 0, n = this.queue.length; i < n; i++) {
-      let { from, to, start, end, char } = this.queue[i];
+      const { from, to, start, end } = this.queue[i];
+      let char = this.queue[i].char;
       if (this.frame >= end) {
         complete++;
         output += to;
@@ -113,7 +114,9 @@ export function Terminal() {
 
     const fx = fxRef.current;
     const message = messages[messageIndex];
-    setIsScrambling(true);
+    startTransition(() => {
+      setIsScrambling(true);
+    });
 
     let timer: NodeJS.Timeout | null = null;
 
